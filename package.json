@@ -15,8 +15,8 @@
   "scripts": {
     "build": "tsc",
     "test": "vitest",
-    "prepare": "tsc",
-    "prepublish": "vitest"
+    "prepare": "rm -rf dist && tsc",
+    "prepublish": "vitest run"
   },
   "devDependencies": {
     "@types/node": "24.7.0",
